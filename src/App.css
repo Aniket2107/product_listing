@@ -77,3 +77,11 @@
 .mt-4 {
   margin-top: 20px;
 }
+
+.cp {
+  cursor: pointer;
+}
+
+.u {
+  text-decoration: underline;
+}

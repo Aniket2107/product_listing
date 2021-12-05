@@ -82,6 +82,10 @@ const Filter = ({
           })}
         </div>
       </div>
+
+      <p onClick={() => handleChange("clearFilter")} className="cp u">
+        Clear filter
+      </p>
     </div>
   );
 };

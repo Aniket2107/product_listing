@@ -22,10 +22,10 @@ type Products = ProductType[];
 function App() {
   const [products, setProducts] = useState<Products>(dummyData);
   const [filteredData, setFilteredData] = useState<Products>(dummyData);
-  const [sortValue, setSortValue] = useState("D");
+  const [sortValue, setSortValue] = useState("D"); // D-> default / L-> Low to high / H->high to low
   const [selectedBrands, setSelectedBrands] = useState<string[]>([]);
   const [selectedSize, setSelectedSize] = useState<string[]>([]);
-  const [gender, setGender] = useState("A");
+  const [gender, setGender] = useState("A"); // A->All / M->Men / F->Women
 
   useEffect(() => {
     filterData();
@@ -105,7 +105,7 @@ function App() {
     } else if (type === "clearFilter") {
       setSelectedBrands([]);
       setSelectedSize([]);
-      setSortValue("D");
+      setGender("A"); //All
       setFilteredData(products);
     }
   };
